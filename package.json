@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "heroicons-ui": "^1.0.0",
     "tailwindcss": "^1.2.0"
   }
 }

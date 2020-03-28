@@ -595,6 +595,31 @@ video {
   height: auto;
 }
 
+.o {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #2b6cb0;
+  border-radius: 9999px;
+}
+
+.O {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #2b6cb0;
+  border-radius: 9999px;
+  background-color: #4299e1;
+}
+
 .container {
   width: 100%;
 }

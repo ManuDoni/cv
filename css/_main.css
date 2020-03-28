@@ -1,0 +1,22 @@
+@tailwind base;
+
+.o {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    @apply bg-white;
+    @apply border-solid;
+    @apply border-2;
+    @apply border-blue-700;
+    @apply rounded-full;
+}
+
+.O {
+    @apply o;
+    @apply bg-blue-500;
+}
+
+@tailwind components;
+
+@tailwind utilities;
