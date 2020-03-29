@@ -2,32 +2,43 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         <title>Curriculum Vitae Manuel Donini</title>
         <link href="css/app.css" rel="stylesheet">
     </head>
     <body>
-        <div class="md:container mx-auto p-2">
-            <div class="flex items-stretch">
-                <div class="flex-initial text-center bg-gray-300 p-2">
+        <div class="mx-auto p-6 print:p-0">
+            <div class="flex flex-col sm:flex-row print:flex-row items-stretch">
+                <div class="flex-shrink md:w-1/4 print:w-1/3 bg-gray-300 p-2">
                     <img src="images/me.jpg" class="w-40 rounded-full border-2 border-white mx-auto">
-                    <p class="text-3xl">Manuel Donini</p>
-                    <div class="">
-                        <p>Nato a Verbania (VB)<br>27 luglio 1994</p>
-                        <p>
-                            <img src="node_modules/heroicons-ui/icons/icon-home.svg" class="inline"><br>
+                    <p class="text-3xl text-center">Manuel Donini</p>
+                    <p class="text-center font-bold">Full-stack web developer</p>
+                    <div id="info" class="text-center">
+                        <p>Nato a Verbania (VB) il 27/07/1994</p>
+                        <div class="mt-1">
+                            <img src="node_modules/heroicons-ui/icons/icon-location.svg" class="w-4 mx-auto">
                             Via Isonzo 45, Verbania 28921 (VB)
-                        </p>
-                        <p>
-                            <img src="node_modules/heroicons-ui/icons/icon-mail.svg" class="inline"><br>
+                        </div>
+                        <div class="mt-1">
+                            <img src="node_modules/heroicons-ui/icons/icon-mail.svg" class="w-4 mx-auto">
                             manueldonini94@gmail.com
-                        </p>
-                        <p>
-                            <img src="node_modules/heroicons-ui/icons/icon-call.svg" class="inline"><br>
+                        </div>
+                        <div class="mt-1">
+                            <img src="node_modules/heroicons-ui/icons/icon-call.svg" class="w-4 mx-auto">
                             +39 3348454942
+                        </div>
+                    </div>
+                    <div id="bio" class="text-sm md:text-base mt-1">
+                        <h2 class="text-lg font-bold">Bio</h2>
+                        <p>Mi piace definirmi un "Artigiano del web".</p>
+                        <p>Sono ordinato, riflessivo, altruista, paziente, prudente e pignolo.</p>
+                        <p>
+                            Mi piace fare le cose una sola volta ma fatte bene.<br>
+                            Studio quotidianamente per tenermi aggiornato e per migliorarmi in alcuni aspetti tecnici.
                         </p>
                     </div>
-                    <div id="skills" class="text-left text-sm md:text-base mt-2">
-                        <h2 class="text-xl">Competenze</h2>
+                    <div id="skills" class="text-sm md:text-base mt-1">
+                        <h2 class="text-lg font-bold">Competenze</h2>
                         <b>Inglese</b>
                         <div class="grid grid-cols-2 mb-1">
                             <div>Lettura:</div><div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="o"></i></div>
@@ -39,18 +50,19 @@
                             <div><b>Laravel:</b></div><div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="o"></i></div>
                             <div><b>MySQL:</b></div><div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i></div>
                             <div><b>JavaScript:</b></div><div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="o"></i></div>
-                            <div><b>HTML + CSS:</b></div><div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i></div>
+                            <div><b>HTML+CSS:</b></div><div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i></div>
                             <div><b>Git</b></div><div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="o"></i></div>
                             <div><b>Docker</b></div><div><i class="O"></i><i class="O"></i><i class="O"></i><i class="o"></i><i class="o"></i></div>
                             <div><b>IIS</b></div><div><i class="O"></i><i class="O"></i><i class="O"></i><i class="o"></i><i class="o"></i></div>
+                            <div><b>Clean Code</b></div><div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="o"></i></div>
                         </div>
                     </div>
                 </div>
-                <div class="flex-auto px-4">
+                <div class="flex-auto px-4 flex flex-col items-stretch">
                     <h1 class="text-4xl">Curriculum Vitae</h1>
-                    <div class="flex flex-col md:flex-row flex-wrap text-sm md:text-base">
-                        <div id="experiences" class="flex-1 pl-4 border-l-4 border-blue-400 mb-2">
-                            <h2 class="text-2xl">Esperienze</h2>
+                    <div class="flex flex-col md:flex-row print:flex-row flex-wrap text-sm md:text-base">
+                        <div id="experiences" class="flex-1 pl-4 pr-1 border-l-4 border-blue-400 mb-4">
+                            <h2 class="text-2xl font-bold">Esperienze</h2>
                             <div class="mt-2">
                                 17/07/2014 – Corrente<br>
                                 <b>Tecnos SRL di Di Nozzi Nicola e Botta Mauro</b><br>
@@ -58,7 +70,7 @@
                                 Tipo di azienda: Software House<br>
                                 Tipo di impiego: sviluppatore web<br>
                                 Principali mansioni e responsabilità:<br>
-                                <ul  class="list-disc ml-5">
+                                <ul class="list-disc ml-5">
                                     <li>Progettazione database</li>
                                     <li>Progettazione e sviluppo di applicazioni web</li>
                                     <li>Progettazione e sviluppo di API REST</li>
@@ -72,30 +84,63 @@
                                 Tipo di impiego: Tirocinante sviluppatore web<br>
                                 Principali mansioni e responsabilità:<br>
                                 <ul class="list-disc ml-5">
-                                    <li>Sviluppo siti web con Wordpress</li>
+                                    <li>Sviluppo di siti web con Wordpress</li>
                                     <li>Progettazione e sviluppo di applicazioni web server-side</li>
                                 </ul>
                             </div>
                         </div>
-                        <div id="studies" class="flex-1 pl-4 border-l-4 border-blue-400">
-                            <h2 class="text-2xl">Formazione</h2>
+                        <div id="studies" class="flex-1 pl-4 pr-1 border-l-4 border-blue-400">
+                            <h2 class="text-2xl font-bold">Formazione</h2>
                             <div class="mt-2">
                                 09/2013 – 06/2014<br>
                                 <b>SUPSI, dipartimento tecnologie innovative, Manno, Svizzera</b><br>
-                                Progettazione dell’interfaccia e dell’interazione per dispositivi mobili<br>
-                                Materie:
-                                Sviluppo di applicazioni per i seguenti sistemi operativi: Android, iOS, Windows 8.<br>
-                                Sviluppo di applicazioni HTML5 cross platform.<br>
-                                Sicurezza dei dispositivi mobili.<br>
-                                Qualifica conseguita: Certificato di studi avanzati sullo sviluppo di applicazioni mobili<br>
+                                Corsi:
+                                <ul class="list-disc ml-5">
+                                    <li>Progettazione dell’interfaccia e dell’interazione per dispositivi mobili</li>
+                                    <li>Sviluppo di applicazioni per i seguenti sistemi operativi: Android, iOS, Windows 8</li>
+                                    <li>Sviluppo di applicazioni HTML5 cross platform</li>
+                                    <li>Sicurezza dei dispositivi mobili</li>
+                                </ul>
+                                Qualifica conseguita: Certificato di studi avanzati sullo sviluppo di applicazioni mobili.<br>
                                 Livello nella classificazione nazionale svizzera: CAS (Certificate of Advanced Studies)
                             </div>
                             <div class="mt-3">
                                 09/2008 – 06/2013<br>
                                 <b>I.T.I.S. Luigi Cobianchi, Verbania (VB), Italia</b><br>
-                                Principali materie: informatica, elettronica e telecomunicazioni, sistemi informatici, statistica<br>
-                                Qualifica conseguita: Perito industriale per l’informatica<br>
+                                Principali materie:
+                                <ul class="list-disc ml-5">
+                                    <li>Informatica</li>
+                                    <li>Elettronica e telecomunicazioni</li>
+                                    <li>Sistemi informatici</li>
+                                    <li>Statistica</li>
+                                </ul>
+                                Qualifica conseguita: Perito industriale per l’informatica.<br>
                                 Diploma di scuola secondaria di secondo grado
+                            </div>
+                        </div>
+                    </div>
+                    <div id="made-with" class="flex-auto flex items-end p-2">
+                        <div class="flex-auto flex flex-col">
+                            <div class="flex flex-row items-center">
+                                <div class="flex-auto">
+                                    <p>
+                                        Questo curriculum è stato creato usando esclusivamente html e css, con l'aiuto di Tailwind CSS
+                                        <img src="images/tailwindcss-icon.svg" class="w-4 inline align-baseline">
+                                    </p>
+                                    <p>
+                                        Potete trovare la repository di questo cv su GitHub al link
+                                        <a href="https://github.com/manudoni/cv">https://github.com/manudoni/cv</a> o scansionando il codice QR.
+                                    </p>
+                                </div>
+                                <div class="flex-shrink px-4">
+                                    <img src="images/qr-code.svg" class="w-24 mx-auto">
+                                </div>
+                            </div>
+                            <div>
+                                <p>
+                                    Autorizzo il trattamento dei dati personali contenuti nel mio curriculum vitae
+                                    in base art. 13 del D. Lgs. 196/2003.
+                                </p>
                             </div>
                         </div>
                     </div>
