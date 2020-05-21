@@ -13,17 +13,17 @@
                     <img src="images/me.jpg" class="w-40 rounded-full border-2 border-white mx-auto">
                     <p class="text-3xl text-center">Manuel Donini</p>
                     <p class="text-center font-bold">Full-stack web developer</p>
-                    <div id="info" class="text-center">
+                    <div id="info" class="text-center md:text-base">
                         <p>Nato a Verbania (VB) il 27/07/1994</p>
-                        <div class="mt-1">
+                        <div class="mt-2">
                             <img src="node_modules/heroicons-ui/icons/icon-location.svg" class="w-4 mx-auto">
                             Via Isonzo 45, Verbania 28921 (VB)
                         </div>
-                        <div class="mt-1">
+                        <div class="mt-2">
                             <img src="node_modules/heroicons-ui/icons/icon-mail.svg" class="w-4 mx-auto">
                             manueldonini94@gmail.com
                         </div>
-                        <div class="mt-1">
+                        <div class="mt-2">
                             <img src="node_modules/heroicons-ui/icons/icon-call.svg" class="w-4 mx-auto">
                             +39 3348454942
                         </div>
@@ -38,7 +38,7 @@
                         </p>
                     </div>
                     <div id="skills" class="text-sm md:text-base mt-1">
-                        <h2 class="text-lg font-bold">Competenze</h2>
+                        <h2 class="text-lg font-bold">Abilità</h2>
                         <b>Inglese</b>
                         <div class="grid grid-cols-2 mb-1">
                             <div>Lettura:</div><div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="o"></i></div>
@@ -61,7 +61,7 @@
                 <div class="flex-auto px-4 flex flex-col items-stretch">
                     <h1 class="text-4xl">Curriculum Vitae</h1>
                     <div class="flex flex-col md:flex-row print:flex-row flex-wrap text-sm md:text-base">
-                        <div id="experiences" class="flex-1 pl-4 pr-1 border-l-4 border-blue-400 mb-4">
+                        <div id="experiences" class="flex-1 pl-4 pr-1 border-l-4 border-blue-400 mb-4 md:mb-0 print:mb-0">
                             <h2 class="text-2xl font-bold">Esperienze</h2>
                             <div class="mt-2">
                                 17/07/2014 – Corrente<br>
@@ -89,7 +89,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div id="studies" class="flex-1 pl-4 pr-1 border-l-4 border-blue-400">
+                        <div id="studies" class="flex-1 pl-4 pr-1 border-l-4 border-blue-400 mb-4 md:mb-0 print:mb-0">
                             <h2 class="text-2xl font-bold">Formazione</h2>
                             <div class="mt-2">
                                 09/2013 – 06/2014<br>
@@ -119,24 +119,35 @@
                             </div>
                         </div>
                     </div>
-                    <div id="made-with" class="flex-auto flex items-end p-2">
+                    <div id="competence" class="flex-shrink">
+                        <h2 class="text-2xl font-bold">Competenze</h2>
+                        <p>
+                            Sono in grado di seguire la realizzazione di un applicazione web in tutte le sue fasi:
+                            progettazione, sviluppo del backend e del frotend, test (unit e integration test), preparazione del server e rilascio in produzione.<br>
+                            Ho esperienza con alcuni servizi AWS (RDS, S3, EC2), Azure (table storage) e la gestione di un webserver Windows (IIS).<br>
+                            Mi piace progettare database e creare query performanti anche con svariate centinaia di migliaia di record.<br>
+                            Mi piace eseguire il refactoring del codice per migliorarne l'estetica, le performance o la testabilità.<br>
+                            Scrivo codice pulito e documentato in modo da facilitare il lavoro ai colleghi, utilizzando il principio DRY ed i principi SOLID.<br>
+                            Nell'attività quotidiana uso VSCode, Git (Source Tree), Docker (Laradock) e Trello.
+                        </p>
+                    </div>
+                    <div class="flex-auto flex items-end mt-2 text-xs">
                         <div class="flex-auto flex flex-col">
-                            <div class="flex flex-row items-center">
+                            <div id="made-with" class="flex flex-row items-center">
                                 <div class="flex-auto">
                                     <p>
                                         Questo curriculum è stato creato usando esclusivamente html e css, con l'aiuto di Tailwind CSS
-                                        <img src="images/tailwindcss-icon.svg" class="w-4 inline align-baseline">
-                                    </p>
-                                    <p>
-                                        Potete trovare la repository di questo cv su GitHub al link
-                                        <a href="https://github.com/manudoni/cv">https://github.com/manudoni/cv</a> o scansionando il codice QR.
+                                        <img src="images/tailwindcss-icon.svg" class="w-4 inline align-baseline">.
+                                        Potete trovare la repository di questo CV su GitHub al link
+                                        <a href="https://github.com/manudoni/cv" class="text-blue-600 underline">https://github.com/manudoni/cv</a>
+                                         o scansionando il codice QR.
                                     </p>
                                 </div>
-                                <div class="flex-shrink px-4">
-                                    <img src="images/qr-code.svg" class="w-24 mx-auto">
+                                <div class="flex-shrink">
+                                    <img src="images/qr-code.svg" class="w-24 print:w-20">
                                 </div>
                             </div>
-                            <div>
+                            <div id="privacy" class="flex-shrink mt-2">
                                 <p>
                                     Autorizzo il trattamento dei dati personali contenuti nel mio curriculum vitae
                                     in base art. 13 del D. Lgs. 196/2003.

@@ -2,5 +2,8 @@
   "dependencies": {
     "heroicons-ui": "^1.0.0",
     "tailwindcss": "^1.2.0"
+  },
+  "scripts": {
+    "tailwind": "npx tailwindcss build css/_main.css -o css/app.css"
   }
 }

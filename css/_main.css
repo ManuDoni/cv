@@ -1,5 +1,11 @@
 @tailwind base;
 
+@media print {
+    html {
+        font-size: 90%;
+    }
+}
+
 .o {
     width: 0.9em;
     height: 0.9em;
