@@ -1,9 +1,11 @@
 {
   "dependencies": {
+    "cross-env": "^7.0.3",
     "heroicons-ui": "^1.0.0",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^2.1.0"
   },
   "scripts": {
-    "tailwind": "npx tailwindcss build css/_main.css -o css/app.css"
+    "prod": "cross-env NODE_ENV=production npx tailwindcss build -i css/_main.css -o css/app.css --minify",
+    "watch": "npx tailwindcss build -i css/_main.css -o css/app.css --watch"
   }
 }

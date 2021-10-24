@@ -1,4 +1,8 @@
 module.exports = {
+  purge: [
+    './curriculum_donini_manuel.html',
+  ],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       screens: {
