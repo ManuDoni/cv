@@ -1,10 +1,15 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
-  purge: [
+  content: [
     './curriculum_donini_manuel.html',
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        primary: colors.sky,
+        grey: colors.slate,
+      },
       screens: {
         'print': {'raw': 'print'},
         // => @media  print { ... }
@@ -14,6 +19,5 @@ module.exports = {
       }
     },
   },
-  variants: {},
   plugins: [],
 }

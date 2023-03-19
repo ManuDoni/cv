@@ -1,0 +1,35 @@
+@tailwind base;
+
+@layer base {
+    @media print {
+        html {
+            font-size: 85%;
+        }
+    }
+
+    ul {
+        @apply ml-5 list-disc;
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .o {
+        /* width: 0.9em;
+        height: 0.9em; */
+        @apply w-4 h-4 inline-block align-middle mr-1 bg-white border-solid border-2 border-primary-500 rounded-full;
+    }
+
+    .O {
+        @apply o;
+        @apply bg-primary-400;
+    }
+
+    .O\/2 {
+        @apply o;
+        background-image: linear-gradient(to right, theme('colors.primary.400') 55%, theme('colors.transparent') 55%, theme('colors.transparent'));
+    }
+}
