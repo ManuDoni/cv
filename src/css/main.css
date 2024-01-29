@@ -16,20 +16,22 @@
 @tailwind utilities;
 
 @layer components {
-
+    /* cerchio vuoto */
     .o {
         /* width: 0.9em;
         height: 0.9em; */
         @apply w-4 h-4 inline-block align-middle mr-1 bg-white border-solid border-2 border-primary-500 rounded-full;
     }
 
+    /* cerchio pieno */
     .O {
         @apply o;
         @apply bg-primary-400;
     }
 
+    /* cerchio mezzo pieno */
     .O\/2 {
         @apply o;
-        background-image: linear-gradient(to right, theme('colors.primary.400') 55%, theme('colors.transparent') 55%, theme('colors.transparent'));
+        background-image: linear-gradient(to right, theme('colors.primary.400') 0%, theme('colors.primary.400') 55%, theme('colors.transparent') 55%, theme('colors.transparent'));
     }
 }

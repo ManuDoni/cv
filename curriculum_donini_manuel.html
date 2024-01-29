@@ -10,14 +10,14 @@
 </head>
 
 <body>
-    <div class="p-6 mx-auto print:p-0">
+    <div class="h-full p-6 mx-auto print:p-0">
         <div class="flex flex-col items-stretch sm:flex-row print:flex-row">
             <aside class="p-2 bg-grey-100 shrink md:w-1/4 print:w-1/3">
                 <img src="images/me.jpg" class="w-40 mx-auto border-2 border-white rounded-full">
                 <p class="text-3xl text-center">Manuel Donini</p>
                 <p class="font-bold text-center">Backend Web Developer</p>
                 <div id="info" class="text-center">
-                    <p>Nato a Verbania (VB) il 27/07/1994</p>
+                    <p>Nato a Verbania nel 1994</p>
                     <div class="mt-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-4 mx-auto">
@@ -45,13 +45,14 @@
                         +39 3348454942
                     </div>
                 </div>
-                <div id="bio" class="mt-1">
+                <div id="bio" class="mt-1 text-justify">
                     <h2 class="text-lg font-bold">Bio</h2>
-                    <p>Mi piace definirmi un "Artigiano del web".</p>
-                    <p>Sono ordinato, riflessivo, altruista, paziente, prudente e pignolo (ma senza esagerare).</p>
+                    <p>Mi piace definirmi un "Artigiano del web" perchè punto molto sulla qualità.</p>
+                    <p>Sono onesto, ordinato, riflessivo, altruista, paziente, prudente e pignolo (ma senza esagerare).
+                    </p>
                     <p>
                         Mi piace fare le cose una sola volta ma fatte bene.<br>
-                        Studio quotidianamente per tenermi aggiornato e per migliorarmi negli aspetti tecnici.
+                        Studio quotidianamente per tenermi aggiornato e per colmare le mie lacune.
                     </p>
                 </div>
                 <div id="skills" class="mt-1">
@@ -71,49 +72,69 @@
                         <div><b>Laravel:</b></div>
                         <div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i></div>
                         <div><b>MySQL:</b></div>
-                        <div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="O/2"></i></div>
+                        <div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i></div>
                         <div><b>JavaScript:</b></div>
                         <div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="o"></i></div>
+                        <div><b>TypeScript:</b></div>
+                        <div><i class="O"></i><i class="O"></i><i class="O"></i><i class="o"></i><i class="o"></i></div>
                         <div><b>React JS:</b></div>
                         <div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="o"></i></div>
                         <div><b>HTML+CSS:</b></div>
                         <div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i></div>
-                        <div><b>Python:</b></div>
-                        <div><i class="O"></i><i class="O"></i><i class="O/2"></i><i class="o"></i><i class="o"></i></div>
-                        <div><b>Git</b></div>
-                        <div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="o"></i></div>
                         <div><b>Docker</b></div>
-                        <div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O/2"></i><i class="o"></i></div>
+                        <div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O/2"></i><i class="o"></i>
+                        </div>
                         <div><b>Clean Code</b></div>
                         <div><i class="O"></i><i class="O"></i><i class="O"></i><i class="O"></i><i class="o"></i></div>
                     </div>
                 </div>
+                <div id="random-knowledge" class="pt-2 mt-4 border-t border-primary-400">
+                    <!-- <h2 class="text-lg font-bold">Random</h2> -->
+                    <div class="text-justify">
+                        <span class="text-[1rem] italic">Redis</span>
+                        <span class="text-[1.2rem] font-bold">Event Sourcing</span>
+                        <span class="text-[.8rem]">Git</span>
+                        <span class="text-[1.1rem]">GraphQL</span>
+                        <span class="text-[1rem] bold">LiveWire</span>
+                        <span class="text-[.8rem] italic">OpenAPI</span>
+                        <span class="text-[.8rem] font-bold">XDebug</span>
+                        <span class="text-[1rem] italic">InertiaJS</span>
+                        <span class="text-[1.2rem] font-bold">Swoole</span>
+                        <span class="text-[.8rem] italic">Monitoring</span>
+                        <span class="text-[.8rem] font-bold">TDD</span>
+                        <span class="text-[1.2rem]">Filament</span>
+                        <span class="text-[.8rem] italic">Pest</span>
+                        <span class="text-[1rem] font-bold">WebSocket</span>
+                        <span class="text-[1rem] italic">NativePHP</span>
+                        <span class="text-[.8rem]">gRPC</span>
+                    </div>
+                </div>
             </aside>
-            <div class="flex flex-col items-stretch flex-auto gap-3 px-4 print:text-sm">
-                <h1 class="mb-2 text-4xl">Curriculum Vitae</h1>
+            <div class="flex flex-col items-stretch flex-auto gap-2 px-4 print:text-sm">
+                <!-- <h1 class="mb-2 text-4xl">Curriculum Vitae</h1> -->
                 <div class="flex flex-col flex-wrap gap-2 md:flex-row print:flex-row">
-                    <div id="experiences" class="flex-1 pl-4 pr-1 mb-4 border-l-4 border-primary-400 md:mb-0 print:mb-0">
+                    <div id="experiences" class="flex-1 pl-4 pr-1 mb-4 md:mb-0 print:mb-0">
                         <h2 class="text-2xl font-bold">Esperienze</h2>
                         <div class="mt-2">
                             11/2020 – Corrente<br>
-                            <b>Sviluppatore Web - Desktop Remoto SRL</b><br>
+                            <b>Full Stack Web Developer - DkR S.r.l.</b><br>
                             Via Cavour 2, Lomazzo (CO)<br>
-                            Tipo di azienda: Software House<br>
+                            Tipo di azienda: Web agency<br>
                             Principali mansioni e responsabilità:<br>
                             <ul>
-                                <li>Progettazione database</li>
-                                <li>Progettazione e sviluppo di applicazioni web</li>
-                                <li>Progettazione e sviluppo di API REST</li>
+                                <li>Progettazione, sviluppo e test di applicazioni web</li>
+                                <li>Progettazione, sviluppo e test di API REST</li>
+                                <li>Consulenza progetti Laravel</li>
+                                <li>Sviluppo plugin WordPress</li>
                             </ul>
                         </div>
                         <div class="mt-4">
                             07/2014 – 11/2020<br>
-                            <b>Sviluppatore Web - Tecnos SRL di Di Nozzi Nicola e Botta Mauro</b><br>
+                            <b>Full Stack Web Developer - Tecnos S.r.l. di Di Nozzi Nicola e Botta Mauro</b><br>
                             Via Maurizio Muller 35/17, Verbania (VB)<br>
                             Tipo di azienda: Software House<br>
                             Principali mansioni e responsabilità:<br>
                             <ul>
-                                <li>Progettazione database</li>
                                 <li>Progettazione e sviluppo di applicazioni web</li>
                                 <li>Progettazione e sviluppo di API REST</li>
                             </ul>
@@ -127,7 +148,7 @@
                             Corsi:
                             <ul>
                                 <li>Progettazione dell’interfaccia e dell’interazione per dispositivi mobili</li>
-                                <li>Sviluppo di applicazioni per i seguenti sistemi operativi: Android, iOS, Windows 8
+                                <li>Sviluppo di applicazioni per i seguenti sistemi operativi: Android, iOS, Windows
                                 </li>
                                 <li>Sviluppo di applicazioni HTML5 cross platform</li>
                                 <li>Sicurezza dei dispositivi mobili</li>
@@ -154,34 +175,46 @@
                 <div id="competences" class="shrink">
                     <h2 class="text-2xl font-bold">Competenze</h2>
                     <p>
-                        Ho una grande esperienza con il framework php Laravel di cui ho utilizzato ogni sua
-                        funzionalità tra cui broadcasting, queues e task scheduling.<br>
-                        Sono in grado di seguire la realizzazione di un'applicazione web in tutte le sue fasi:
-                        progettazione, sviluppo del backend e del frontend, scrittura di test automatici (unit, integration ed end-to-end) e rilascio in
-                        produzione.<br>
-                        Ho esperienza con alcuni servizi cloud tra i quali AWS (RDS, S3, EC2) ed Azure (table
-                        storage).<br>
-                        Mi piace progettare database e creare query performanti anche con svariate centinaia di migliaia
-                        di record.<br>
-                        So realizzare funzionalità real-time attraverso canali WebSocket.<br>
-                        Sono principalmente un backend web developer ma sono anche in grado di svilupare un'interfaccia
-                        grafica moderna utilizzando, tra gli altri, <i>React JS</i> e <i>Tailwind CSS</i>.<br>
-                        Sono in grado di realizzare mockup delle interfacce grafiche tramite il software
-                        <i>Figma</i>.<br>
-                        Mi piace eseguire il refactoring del codice per migliorarne l'estetica, le performance o la
+                        Per il backend uso principalmente PHP, MySQL e Laravel. Per il frontend uso LiveWire, AlpineJS
+                        oppure JavaScript, TypeScript, React. Come framework CSS uso Tailwind. Nonostante queste
+                        competenze nel frontend preferisco lavorare al backend.<br>
+                        Mi piace scrivere test automatici (unit, integration ed e2e), credo che sia uno dei migliori
+                        investimenti di tempo che si possa fare in un progetto.<br>
+                        So realizzare funzionalità real-time attraverso canali WebSocket o SSE. Conosco Redis e l'ho
+                        usato sia per la cache, sia per la gestione di code asincrone.<br>
+                        So fare API di tipo REST, RPC e GraphQL. Conosco i fondamenti di gRPC e Protobuf.<br>
+                        Mi piace progettare database e ottimizzre query. Faccio debug del codice usando XDebug.<br>
+                        Scrivo codice escplicito, pulito e documentato. Conosco bene la OOP ed i principi SOLID ma
+                        ultimamente mi sto avvicinando anche alla programmazione funzionale.<br>
+                        Mi piace fare refactoring del codice per migliorarne la legibilità, le performance e la
                         testabilità.<br>
-                        Scrivo codice escplicito, pulito e documentato in modo da facilitare il lavoro ai colleghi,
-                        utilizzando il principio DRY (ma dove serve anche WET) ed i principi SOLID.
+                        Utilizzo Docker per gestire l'ambiente di sviluppo locale.<br>
+                        Nella mia carriera ho realizzato: CRM, CMS custom, API e applicazioni web, ad esempio:<br>
                     </p>
+                    <ul>
+                        <li>
+                            applicazione web nel settore degli eSport con sistema di matchmaking, classifiche e
+                            partite, sviluppato con Laravel e React, utilizzando processi paralleli in code asincrone e
+                            WebSocket per aggiornamento del frontend in tempo reale.
+                        </li>
+                        <li>
+                            API per un'azienda nel settore della logistica che integra il
+                            magazzino con i servizi web dei corrieri per automatizzare acquisizione ordini da vari
+                            ecommerce e gestire le spedizioni.
+                        </li>
+                        <li>
+                            applicazione web per lo scambio di documenti fiscali B2B, integrato con software gestionale
+                            e fatturazione elettronica
+                        </li>
+                    </ul>
                 </div>
                 <div class="flex items-end flex-auto">
                     <div class="flex flex-col flex-auto">
                         <div id="made-with" class="flex flex-row items-center">
                             <div class="flex-auto">
-                                <p class="print:text-xs">
-                                    Questo curriculum è responsive ed è stato creato utilizzando esclusivamente html e
-                                    css, con Tailwind CSS
-                                    <img src="images/tailwindcss-icon.svg" class="inline w-4 align-baseline">.<br>
+                                <p class="text-justify print:text-xs">
+                                    Questo curriculum è stato creato utilizzando esclusivamente html e
+                                    css, il PDF è generato da uno script Puppeteer che simula la stampa di un A4.
                                     Potete trovare la repository di questo CV su GitHub al link
                                     <a href="https://github.com/manudoni/cv"
                                         class="underline text-primary-500">https://github.com/manudoni/cv</a>
