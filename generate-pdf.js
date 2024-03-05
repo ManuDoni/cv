@@ -4,22 +4,27 @@ const puppeteer = require('puppeteer');
   const browser = await puppeteer.launch({ headless: 'new' });
   const page = await browser.newPage();
 
-  await page.goto(`file://${__dirname}/curriculum_donini_manuel.html`, { waitUntil: 'networkidle0' });
+  const pages = ['curriculum_donini_manuel', 'curriculum_donini_manuel_en'];
 
-  await page.emulateMediaType('print');
+  for (let i in pages) {
 
-  await page.pdf({
-    path: 'curriculum_donini_manuel.pdf',
-    format: 'A4',
-    landscape: false,
-    printBackground: true,
-    margin: {
-      top: '1cm',
-      bottom: '1cm',
-      left: '1cm',
-      right: '1cm',
-    }
-  });
+    await page.goto(`file://${__dirname}/${pages[i]}.html`, { waitUntil: 'networkidle0' });
+
+    await page.emulateMediaType('print');
+
+    await page.pdf({
+      path: `${pages[i]}.pdf`,
+      format: 'A4',
+      landscape: false,
+      printBackground: true,
+      margin: {
+        top: '1cm',
+        bottom: '1cm',
+        left: '1cm',
+        right: '1cm',
+      }
+    });
+  }
 
   await browser.close();
 })();
